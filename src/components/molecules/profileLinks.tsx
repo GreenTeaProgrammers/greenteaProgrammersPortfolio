@@ -8,7 +8,7 @@ interface MemberNameProps {
     twitterSrc?: string,
 };
 
-const MemberName: React.FC<MemberNameProps> = ({ name, githubSrc, twitterSrc }) => {
+const ProfileLinks: React.FC<MemberNameProps> = ({ name, githubSrc, twitterSrc }) => {
     return (
         <HStack align="center">
             <Text fontSize="xl" fontWeight="bold">{ name }</Text>
@@ -18,4 +18,4 @@ const MemberName: React.FC<MemberNameProps> = ({ name, githubSrc, twitterSrc }) 
     );
 }
 
-export default MemberName;
+export default ProfileLinks;
