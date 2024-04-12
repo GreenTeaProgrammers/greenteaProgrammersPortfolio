@@ -1,13 +1,15 @@
 import React from "react";
 
 interface SectionContentProps {
-    content: string;
+    content?: string,
+    component?: React.ReactNode,
 };
 
-const SectionContent: React.FC<SectionContentProps> = ({ content }) => {
+const SectionContent: React.FC<SectionContentProps> = ({ content, component }) => {
     return (
         <div>
             { content }
+            { component }
         </div>
     );
 };
