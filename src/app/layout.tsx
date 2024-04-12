@@ -21,10 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ChakraBaseProvider theme={theme}>
-            <Header bg="#005C53" height={ headingHeight } />
-            <Box flex="1" overflowY="auto" bg="#042940" paddingTop={ headingHeight }>
-              {children}
-            </Box>
+          <Header bg="#005C53" height={headingHeight} />
+          <Box flex="1" overflowY="auto" bg="#042940" paddingTop={headingHeight}>
+            {children}
+          </Box>
         </ChakraBaseProvider>
       </body>
     </html>
