@@ -1,0 +1,8 @@
+.next/
+node_modules/
+out/
+
+.prettierrc
+.eslintrc.json
+eslint.config.js
+package-lock.json
