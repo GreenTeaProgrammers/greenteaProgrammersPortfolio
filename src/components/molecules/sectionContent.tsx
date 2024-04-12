@@ -7,7 +7,7 @@ interface SectionContentProps {
 
 const SectionContent: React.FC<SectionContentProps> = ({ content, component }) => {
     return (
-        <div>
+        <div style={{ whiteSpace: 'pre-wrap' }}>
             { content }
             { component }
         </div>

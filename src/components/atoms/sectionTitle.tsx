@@ -7,7 +7,7 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
     return (
-        <Text fontSize="2xl" fontWeight="bold">
+        <Text fontSize="3xl" fontWeight="bold">
             { title }
         </Text>
     );
