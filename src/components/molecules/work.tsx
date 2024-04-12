@@ -12,7 +12,7 @@ interface WorkProps {
 
 const Work: React.FC<WorkProps> = ({ src="https://via.placeholder.com/150", alt="image", maxH=200, title, description}) => {
     return (
-        <HStack p={5} border="1px solid #ccc" my={3} align="flex-start">
+        <HStack p={5} border="1px solid #ccc" my={3} align="flex-start" maxW="100%">
             <Img src={ src } alt={ alt } maxH={ maxH }/>
             <WorkDescription title={ title } description= {description }/>
         </HStack>

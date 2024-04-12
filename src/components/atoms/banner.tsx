@@ -1,11 +1,15 @@
-import { Box, Img } from "@chakra-ui/react";
+import { Img } from "@chakra-ui/react";
 import BannerImage from "@/assets/icon_alpha.png";
 import Link from "next/link";
 
-const Banner: React.FC = () => {
+interface BannerProps {
+    height?: string,
+}
+
+const Banner: React.FC<BannerProps> = ({ height="80px"}) => {
     return (
         <Link href="/">
-            <Img src={BannerImage.src} alt="banner" height="100%" />
+            <Img src={BannerImage.src} alt="banner" height={ height } maxH="100%" m={5}/>
         </Link>
     );
 };

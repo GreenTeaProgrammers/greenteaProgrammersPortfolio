@@ -1,7 +1,7 @@
-import { Flex, Spacer } from "@chakra-ui/react";
+import { Flex, HStack, Spacer } from "@chakra-ui/react";
 import React from "react";
 import Banner from "../atoms/banner";
-import HeaderLinks from "../molecules/headerLinks";
+import HeaderLinks from "../molecules/headerLinksContainer";
 
 interface HeaderProps {
     bg: string;
@@ -11,11 +11,11 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ bg, height = "100px" }) => {
     return (
         <>
-            <Flex bg={ bg } height={ height } width="100%">
+            <HStack bg={ bg } height={ height } width="100%" align="center" position="fixed" top={0}>
                 <Banner />
                 <Spacer />
                 <HeaderLinks />
-            </Flex>
+            </HStack>
         </>
     );
 };

@@ -16,16 +16,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headingHeight = "100px";
   return (
     <html lang="en">
       <body className={inter.className}>
         <ChakraBaseProvider theme={theme}>
-          <Box className={inter.className} minH="100vh" display="flex" flexDir="column">
-            <Header bg="#005C53"/>
-            <Box flex="1" overflowY="auto" bg="#042940">
+            <Header bg="#005C53" height={ headingHeight } />
+            <Box flex="1" overflowY="auto" bg="#042940" paddingTop={ headingHeight }>
               {children}
             </Box>
-          </Box>
         </ChakraBaseProvider>
       </body>
     </html>
