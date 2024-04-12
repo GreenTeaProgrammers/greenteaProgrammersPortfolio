@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Box, ChakraBaseProvider } from "@chakra-ui/react";
-import Header from "@/components/organism/Header";
+import Header from "@/components/organism/header";
+import theme from "./theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ChakraBaseProvider>
+        <ChakraBaseProvider theme={theme}>
           <Box className={inter.className} minH="100vh" display="flex" flexDir="column">
             <Header bg="#005C53"/>
             <Box flex="1" overflowY="auto" bg="#042940">

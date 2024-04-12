@@ -4,11 +4,9 @@ import Link from "next/link";
 
 const Banner: React.FC = () => {
     return (
-        <Box>
-            <Link href="/">
-                <Img src={ BannerImage.src } alt="banner" maxHeight="100px" />
-                </Link>
-        </Box>
+        <Link href="/">
+            <Img src={BannerImage.src} alt="banner" height="100%" />
+        </Link>
     );
 };
 
