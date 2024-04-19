@@ -4,10 +4,9 @@ import SectionTitle from "../atoms/sectionTitle";
 import SectionContent from "../molecules/sectionContent";
 import Separator from "../atoms/separator";
 
-const content =
-`静岡大学の学生グループで、主にハッカソンに出場しています。
+const content = `静岡大学の学生グループで、主にハッカソンに出場しています。
 意欲的なメンバーで構成され、日々、開発や自己研鑽に取り組んでスキルアップに努めています。
-また、チームとして、競技プログラミングやCTF、アプリ開発やウェブ開発など幅広いドメインに精通しています。`
+また、チームとして、競技プログラミングやCTF、アプリ開発やウェブ開発など幅広いドメインに精通しています。`;
 
 const AboutSection: React.FC = () => {
   return (
