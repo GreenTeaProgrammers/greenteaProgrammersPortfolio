@@ -31,4 +31,4 @@ jobs: # ジョブの設定
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           keep_files: true
-          publish_branch: develop
+          publish_branch: gh-pages
