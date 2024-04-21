@@ -1,6 +1,7 @@
 This is the GreenTea Programmers Portfolio web site
 
 # Getting Started
+
 ```bash
 npm install
 npm run dev

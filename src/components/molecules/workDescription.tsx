@@ -10,7 +10,14 @@ interface WorkDescriptionProps {
   imageMaxH?: number;
 }
 
-const WorkDescription: React.FC<WorkDescriptionProps> = ({ description, descriptionImage, youtubeSrc, eventSrc, imageMaxH, githubRepo }) => {
+const WorkDescription: React.FC<WorkDescriptionProps> = ({
+  description,
+  descriptionImage,
+  youtubeSrc,
+  eventSrc,
+  imageMaxH,
+  githubRepo,
+}) => {
   return (
     <HStack m={5} align="flex-start" spacing={10}>
       <Img src={descriptionImage} maxH={imageMaxH} />
