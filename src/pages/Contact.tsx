@@ -11,7 +11,7 @@ mail: greenteaprogrammers@gmail.com`
       <VStack width="80%" p={5} align="left">
         <SectionTitle title="Contact" />
         <SectionContent content={content} />
-        <Text color="blue.300"><a href="https://github.com/GreenTeaProgrammers">Github Organization</a></Text>
+        <Text color="blue.300"><a href="https://github.com/GreenTeaProgrammers">GitHub Organization</a></Text>
       </VStack>
     </VStack>
   );
