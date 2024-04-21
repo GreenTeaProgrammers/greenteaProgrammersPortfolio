@@ -1,27 +1,56 @@
 import React from "react";
-import { HStack, Img } from "@chakra-ui/react";
+import { HStack, Img, VStack, Text } from "@chakra-ui/react";
 import WorkDescription from "./workDescription";
+import SkillIcons from "./skillIcons";
 
 interface WorkProps {
   src?: string;
   alt?: string;
-  maxH?: number;
+  iconMaxH?: number;
   title: string;
   description: string;
+  descriptionImage?: string;
+  descriptionImageMaxH?: number;
+  githubRepo?: string;
+  youtubeSrc?: string;
+  eventSrc?: string;
+  skills?: string[];
 }
 
 const Work: React.FC<WorkProps> = ({
   src = "https://via.placeholder.com/150",
   alt = "image",
-  maxH = 200,
+  iconMaxH = 200,
   title,
   description,
+  descriptionImage,
+  descriptionImageMaxH,
+  githubRepo,
+  youtubeSrc,
+  eventSrc,
+  skills,
 }) => {
   return (
-    <HStack p={5} border="1px solid #ccc" my={3} align="flex-start" maxW="100%">
-      <Img src={src} alt={alt} maxH={maxH} />
-      <WorkDescription title={title} description={description} />
-    </HStack>
+    <VStack border="1px solid #ccc" align="left" my={5} p={5}>
+      <HStack p={5} align="center" maxW="100%" spacing={10}>
+        <Img src={src} alt={alt} maxH={iconMaxH} />
+        <Text fontSize="5xl" fontWeight="bold">
+          {title}
+        </Text>
+      </HStack>
+      <WorkDescription
+        description={description}
+        descriptionImage={descriptionImage}
+        imageMaxH={descriptionImageMaxH}
+        githubRepo={githubRepo}
+        youtubeSrc={youtubeSrc}
+        eventSrc={eventSrc}
+      />
+      <Text fontSize="2xl" fontWeight="bold" p={3}>
+        技術スタック
+      </Text>
+      {skills ? <SkillIcons skills={skills} px={5} /> : undefined}
+    </VStack>
   );
 };
 
