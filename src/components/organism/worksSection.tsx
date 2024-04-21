@@ -15,7 +15,8 @@ const WorksSection: React.FC = () => {
 
   const tasquestDescription = `やらなきゃいけないメンドウなこと。私たちはそれに日々頭を悩ませています。
 私たちはタスクを行う過程に注目し、タスクを行う中で、「楽しい」を実現するには何が必要なのかを考えました。
-タスクをやっつける。そんなコンセプトをもとに新しいタスク管理ゲームを作成しました。`;
+タスクをやっつける。そんなコンセプトをもとに新しいタスク管理ゲームを作成しました。
+本作品は、LineYahooが主催するOpen Hack U 2023 ONLINEにて発表しました`;
 
   return (
     <VStack align="left" p={10} pb={0} width="80%">
@@ -28,6 +29,8 @@ const WorksSection: React.FC = () => {
         descriptionImage={hoicruise_system.src}
         descriptionImageMaxH={600}
         githubRepo="https://github.com/GreenTeaProgrammers/WhereChildBus"
+        youtubeSrc="https://www.youtube.com/live/VB_LScUyFnk?si=Xy9IWG3BxzpIGvdU&t=2430"
+        eventSrc="https://hacku.yahoo.co.jp/2024/"
         skills={["flutter", "python", "gcp", "github", "pytorch", "go", "planetscale", "docker"]}
       />
       <Work
@@ -38,6 +41,8 @@ const WorksSection: React.FC = () => {
         descriptionImage={tasqust_system.src}
         descriptionImageMaxH={290}
         githubRepo="https://github.com/GreenTeaProgrammers/TasQuest"
+        youtubeSrc="https://www.youtube.com/live/PAsUW8Uk5JM?si=7xN__DGMidoEKqUH&t=6394"
+        eventSrc="https://hacku.yahoo.co.jp/2023/"
         skills={["unity", "swift", "cs", "c", "firebase", "github"]}
       />
       <Separator />

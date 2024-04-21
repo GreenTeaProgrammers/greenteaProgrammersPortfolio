@@ -12,6 +12,8 @@ interface WorkProps {
   descriptionImage?: string;
   descriptionImageMaxH?: number;
   githubRepo?: string;
+  youtubeSrc?: string;
+  eventSrc?: string;
   skills?: string[];
 }
 
@@ -24,6 +26,8 @@ const Work: React.FC<WorkProps> = ({
   descriptionImage,
   descriptionImageMaxH,
   githubRepo,
+  youtubeSrc,
+  eventSrc,
   skills,
 }) => {
   return (
@@ -39,6 +43,8 @@ const Work: React.FC<WorkProps> = ({
         descriptionImage={descriptionImage}
         imageMaxH={descriptionImageMaxH}
         githubRepo={githubRepo}
+        youtubeSrc={youtubeSrc}
+        eventSrc={eventSrc}
       />
       <Text fontSize="2xl" fontWeight="bold" p={3}>
         技術スタック
